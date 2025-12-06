@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background-light dark:bg-background-dark py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center mb-12">
           <p className="text-primary text-base font-bold uppercase tracking-wider">Contact</p>
@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
                   <span className="text-slate-900 dark:text-white text-base font-medium pb-2">Nom complet</span>
                   <input 
                     type="text" 
-                    className="w-full rounded-lg bg-white dark:bg-card-dark border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
+                    className="w-full rounded-lg bg-white dark:bg-card-dark/80 backdrop-blur-sm border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
                     placeholder="Votre nom complet"
                   />
                 </label>
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                   <span className="text-slate-900 dark:text-white text-base font-medium pb-2">Adresse e-mail</span>
                   <input 
                     type="email" 
-                    className="w-full rounded-lg bg-white dark:bg-card-dark border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
+                    className="w-full rounded-lg bg-white dark:bg-card-dark/80 backdrop-blur-sm border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
                     placeholder="votre.email@example.com"
                   />
                 </label>
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
                 <span className="text-slate-900 dark:text-white text-base font-medium pb-2">Sujet</span>
                 <input 
                   type="text" 
-                  className="w-full rounded-lg bg-white dark:bg-card-dark border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
+                  className="w-full rounded-lg bg-white dark:bg-card-dark/80 backdrop-blur-sm border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
                   placeholder="Sujet de votre message"
                 />
               </label>
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
               <label className="flex flex-col">
                 <span className="text-slate-900 dark:text-white text-base font-medium pb-2">Votre message</span>
                 <textarea 
-                  className="w-full rounded-lg bg-white dark:bg-card-dark border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 min-h-[150px] focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm resize-y"
+                  className="w-full rounded-lg bg-white dark:bg-card-dark/80 backdrop-blur-sm border border-gray-300 dark:border-border-dark text-slate-900 dark:text-white px-4 py-3 min-h-[150px] focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm resize-y"
                   placeholder="Écrivez votre message ici..."
                 ></textarea>
               </label>
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
 
           {/* Contact Info Card */}
           <div className="lg:col-span-2">
-            <div className="bg-white dark:bg-card-dark border border-gray-200 dark:border-border-dark rounded-xl p-8 h-full shadow-lg">
+            <div className="bg-white dark:bg-card-dark/80 backdrop-blur-sm border border-gray-200 dark:border-border-dark rounded-xl p-8 h-full shadow-lg">
               <h3 className="text-slate-900 dark:text-white text-2xl font-bold mb-2">Nos Coordonnées</h3>
               <p className="text-slate-600 dark:text-[#8eb9cc] mb-8">
                 Contactez-nous directement via les canaux suivants.

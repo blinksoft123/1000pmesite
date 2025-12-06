@@ -35,7 +35,7 @@ const Process: React.FC = () => {
   ];
 
   return (
-    <div className="relative w-full flex flex-col items-center py-16 md:py-24 bg-background-dark min-h-screen">
+    <div className="relative w-full flex flex-col items-center py-16 md:py-24 min-h-screen">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-b from-background-dark to-transparent"></div>
         <div className="absolute inset-x-0 top-1/3 h-1/2 bg-primary/5 blur-[100px]"></div>
@@ -56,7 +56,7 @@ const Process: React.FC = () => {
             {steps.map((step, index) => (
               <React.Fragment key={index}>
                 <div className="flex flex-col items-center gap-2">
-                  <div className={`w-12 h-12 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${index === steps.length -1 ? 'bg-primary text-white border-primary shadow-glow-primary' : 'bg-primary/10 border-primary text-primary'}`}>
+                  <div className={`w-12 h-12 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${index === steps.length -1 ? 'bg-primary text-white border-primary shadow-glow-primary' : 'bg-primary/10 border-primary text-primary backdrop-blur-sm'}`}>
                     <span className="material-symbols-outlined">{step.icon}</span>
                   </div>
                   {index !== steps.length - 1 && (

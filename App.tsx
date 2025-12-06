@@ -8,6 +8,7 @@ import Process from './pages/Process';
 import Pricing from './pages/Pricing';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import BackgroundAnimation from './components/BackgroundAnimation';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -23,19 +24,25 @@ const App: React.FC = () => {
   return (
     <MemoryRouter>
       <ScrollToTop />
-      <div className="flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/process" element={<Process />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
+      <div className="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
+        {/* Global Background Animation */}
+        <BackgroundAnimation />
+        
+        {/* Main Content Wrapper */}
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/process" element={<Process />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </div>
     </MemoryRouter>
   );

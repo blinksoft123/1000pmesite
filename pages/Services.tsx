@@ -43,7 +43,7 @@ const Services: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <div className="py-16 md:py-24 px-4 bg-background-dark text-center">
+      <div className="py-16 md:py-24 px-4 text-center">
         <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-4">
           Détails des Services du Pack 1000PME
         </h1>
@@ -58,7 +58,7 @@ const Services: React.FC = () => {
           <div key={index} className={`flex flex-col gap-8 items-center ${service.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
             <div className="flex-1 flex flex-col gap-4 text-left">
               <div className="flex items-center gap-3">
-                <div className="bg-primary/20 text-primary p-3 rounded-lg">
+                <div className="bg-primary/20 text-primary p-3 rounded-lg backdrop-blur-sm">
                   <span className="material-symbols-outlined text-2xl">{service.icon}</span>
                 </div>
                 <h3 className="text-white text-2xl md:text-3xl font-bold leading-tight">{service.title}</h3>
@@ -78,7 +78,7 @@ const Services: React.FC = () => {
       </div>
 
       {/* CTA */}
-      <div className="py-20 px-4 text-center bg-card-dark/50 border-t border-white/5 mt-10">
+      <div className="py-20 px-4 text-center bg-card-dark/50 backdrop-blur-md border-t border-white/5 mt-10">
         <div className="flex flex-col items-center gap-6 max-w-3xl mx-auto">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Prêt à transformer votre entreprise?</h2>
           <p className="text-text-muted text-lg">
@@ -88,7 +88,7 @@ const Services: React.FC = () => {
              <Link to="/pricing" className="flex items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold shadow-lg shadow-primary/25 hover:bg-primary-hover transition-all hover:-translate-y-1">
                Souscrire au Programme
              </Link>
-             <Link to="/contact" className="flex items-center justify-center rounded-lg h-12 px-8 bg-card-dark border border-border-dark text-white text-base font-bold hover:bg-white/5 transition-colors">
+             <Link to="/contact" className="flex items-center justify-center rounded-lg h-12 px-8 bg-card-dark/80 border border-border-dark text-white text-base font-bold hover:bg-white/5 transition-colors">
                Contactez-nous
              </Link>
           </div>

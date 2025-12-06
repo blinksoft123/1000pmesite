@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Pricing: React.FC = () => {
   return (
     <div 
-      className="flex flex-col items-center justify-center py-16 sm:py-24 px-4 min-h-screen relative overflow-hidden bg-background-dark"
+      className="flex flex-col items-center justify-center py-16 sm:py-24 px-4 min-h-screen relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
@@ -20,7 +20,7 @@ const Pricing: React.FC = () => {
       </div>
 
       <div className="relative w-full max-w-md p-0.5 rounded-2xl bg-gradient-to-br from-[#00FFFF] to-[#8A2BE2] shadow-2xl z-10 hover:scale-[1.02] transition-transform duration-300">
-        <div className="flex flex-col gap-8 rounded-[15px] bg-[#0A0A1A] p-8 h-full">
+        <div className="flex flex-col gap-8 rounded-[15px] bg-[#0A0A1A]/90 backdrop-blur-md p-8 h-full">
           <div className="flex flex-col gap-2 text-center">
             <h2 className="text-white text-xl font-bold leading-tight uppercase tracking-wider text-primary">Offre Essentielle</h2>
             <div className="flex items-center justify-center gap-1">

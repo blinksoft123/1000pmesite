@@ -24,7 +24,7 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <div className="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark py-16 sm:py-20 md:py-24">
+    <div className="relative flex min-h-screen w-full flex-col py-16 sm:py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tight drop-shadow-lg">
